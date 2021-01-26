@@ -34,7 +34,7 @@ function Carousel(props) {
             const cards = node.children.length;
             return cards < length ? setVisible(true) : setVisible(false);
                 
-      }, [length]);
+      });
 
 
     
