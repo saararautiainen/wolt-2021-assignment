@@ -28,8 +28,9 @@ function App() {
   }
 
   useEffect(() => {
+    
     getData()
-  }, [])
+  });
 
 
 
@@ -42,7 +43,9 @@ function App() {
           return (
             <Carousel key={i} title={item.title} restaurants={item.restaurants} />
 
-          )
+          ) 
+        } else {
+          return null
         }
       }
       )}
